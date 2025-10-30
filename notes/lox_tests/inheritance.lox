@@ -1,0 +1,29 @@
+class Animal {
+    speak() {
+        print "???";
+    }
+}
+
+class Dog < Animal {
+    speak() {
+        print "Woof";
+    }
+}
+
+class Cat < Animal {
+    speak() {
+        print "Meow";
+    }
+}
+
+fun makeSpeak(animal) {
+    animal.speak();
+}
+
+var dog = Dog();
+dog.speak();
+
+var cat = Cat();
+
+makeSpeak(dog);
+makeSpeak(cat);
